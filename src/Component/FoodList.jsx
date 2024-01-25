@@ -1,13 +1,12 @@
 import React from "react";
 import FoodItem from "./FoodItem";
+import Error from "./Error";
 
 export default function FoodList({ item }) {
   //or directly write {item}
   if (item.length == 0) {
     return (
-      <div className="alert alert-primary" role="alert">
-        No food item
-      </div>
+      <Error/>
     );
   } else {
     return (
